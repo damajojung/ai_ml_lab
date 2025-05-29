@@ -1,0 +1,32 @@
+
+adding packages:
+- uv add numpy
+
+This adds the package to the pyproject.toml
+
+running a file from terminal:
+- uv run main.py
+
+if someone else tries to run the project:
+- uv sync
+
+removing a package:
+- uv remove numpy
+
+someone sends then back the project I have to do uv sync again
+and uv automatically detect that the other person has uv removed
+something and will handle the whole thing for me as well
+
+
+# ------------------------------------------------------
+
+ruff is a linter which can be installed like the following:
+- uv tool install ruff
+- uf tool list
+- uv tool upgrade --all
+- uv tool run ruff check
+- uv tool uninstall ruff
+
+There is also a shortcut:
+- uv tool run = uvx
+    - uvx ruff check
